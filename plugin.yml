@@ -1,5 +1,5 @@
 name: QuestPMMP
-main: AlexBrin\Quest\Main
+main: AlexBrin\Quest\quest
 version: 1.0
 api: 3.0.0
 author: Gamchik
