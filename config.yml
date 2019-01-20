@@ -1,0 +1,54 @@
+---
+getQuest: '§eTask name: §c§l> §e {quest}'
+getQuestInfo: '§aQuest: §f {type} §a {count} §2 {target}'
+questEnded: '§aYou have completed all server tasks! Congratulations!'
+questNotExist: '§a The task does not exist. Use the command §e/quest §ato see the task list. '
+questHelp: '§a mission name: §c§l> §r§e {quest} \n The task you need to do: §f {type} {count} §2 {target} '
+questEnd: '§a Complete! §a\n Your reward: §b {count} {award} §a! '
+
+# allquests can have
+# blockBreak
+# blockPlace
+# If you need blockBreak or blockPlace - Write it all
+# playerKill
+# playerDeath
+# itemConsume
+# itemDrop
+quests:
+  - name: First Mission
+    task: blockBreak
+    target: stone block
+    id: 1
+    num: 10
+    award:
+      id: money
+      count: 1000
+      name: coins
+  - name: Second Mission
+    task: blockPlace
+    target: stone block
+    id: 1
+    num: 10
+    award:
+      id: money
+      count: 1000
+      name: coins
+  - name: Third Mission
+    task: itemDrop
+    target: block diamonds
+    id: 57
+    num: 10
+    award:
+      id: money
+      count: 1000
+      name: coins
+  - name: Mission Four
+    task: itemConsume
+    target: golden apple
+    id: 322
+    num: 2
+    award:
+      id: money
+      count: 1000
+      name: coins
+...
