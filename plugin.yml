@@ -1,0 +1,12 @@
+name: QuestPMMP
+main: AlexBrin\Quest\Main
+version: 1.0
+api: 3.0.0
+author: Gamchik
+fixer: GamerSoiCon
+translator: SaltyPixelDevz
+
+commands:
+  quest:
+    description: "Quests for Pmmp!"
+    default: true
