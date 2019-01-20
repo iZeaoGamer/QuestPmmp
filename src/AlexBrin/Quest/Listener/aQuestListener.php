@@ -2,7 +2,6 @@
 
 	namespace AlexBrin\Quest\Listener;
 
-	use AlexBrin\Main;
     use AlexBrin\Quest\quests;
     use pocketmine\command\ConsoleCommandSender;
 	use pocketmine\item\Item;
