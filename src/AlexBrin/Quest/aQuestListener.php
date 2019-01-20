@@ -26,7 +26,7 @@
 		
 		private $plugin;
 
-		public function __construct(Main $plugin) {
+		public function __construct(\AlexBrin\Quest\Main $plugin) {
 			$this->plugin = $plugin;
 		}
 
