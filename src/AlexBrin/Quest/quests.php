@@ -32,6 +32,10 @@
 				if(strtolower($command->getName()) == 'quest') {
 					$name = strtolower($sender->getName());
 					$num = $this->users[$name]['complete'];
+				        if(!isset($this->config["quests"][$num])){
+						$sender->sendMessage($this->config["questEnded"]);
+						return true;
+					}
 					$quest = $this->config['quests'][$num];
 					if($this->users[$name]['during'] !== false) {
 						$sender->sendMessage(str_replace(['\n', '{quest}', '{type}', '{target}', '{count}'], ["\n", $quest['name'], $this->getTypeQuest($quest['task']), $quest['target'], $quest['num']], $this->config['questHelp']));
