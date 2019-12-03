@@ -41,6 +41,12 @@
 				$this->plugin->getLogger()->info("§e$name had been added to the Database!");
 			}
 		}
+		public function onCraft(CraftItemEvent $event) {
+			$player = $event->getPlayer();
+			$name = strtolower($player->getName());
+			if($this->plugin->users[$name]['during'] !== false)
+				$this->checkQuest($player, $this->plugin->users[$name]['during'], 'craftitem', $event->getBlock()->getId());
+		}
 
 		public function onBlockPlace(BlockPlaceEvent $event) {
 			$player = $event->getPlayer();
