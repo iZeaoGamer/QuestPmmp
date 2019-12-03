@@ -17,6 +17,7 @@
 	use pocketmine\event\entity\EntityDamageEvent;
 	use pocketmine\event\entity\EntityDamageByEntityEvent;
 	use pocketmine\event\block\BlockPlaceEvent;
+	use pocketmine\event\inventory\CraftItemEvent;
 	use pocketmine\event\block\BlockBreakEvent;
 
 	use pocketmine\Player;
